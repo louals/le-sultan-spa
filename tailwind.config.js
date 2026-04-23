@@ -7,18 +7,36 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink:  { 900:"#0E2330", 800:"#132B39", 700:"#1A3646", 100:"#E4EBEF" },
-        moss: { 500:"#3F6F54", 400:"#55936F", 300:"#7AB791" },
-        cream:{ 50:"#F7F1E6", 100:"#EFE7D6" },
+        obsidian: "#0A0A0A",
+        alabaster: "#FAFAFA",
+        sultan: {
+          gold: "#C5A059",
+          emerald: "#064E3B",
+        },
       },
-      borderRadius: { brand:"1.25rem" },
+      fontFamily: {
+        serif: ["'Playfair Display'", "serif"],
+        sans: ["Inter", "sans-serif"],
+        mono: ["'JetBrains Mono'", "monospace"],
+      },
+      animation: {
+        'scroll-descend': 'scroll-descend 2s ease-in-out infinite',
+      },
+      keyframes: {
+        'scroll-descend': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(10px)' },
+        },
+      },
+      spacing: {
+        '18': '4.5rem',
+        '22': '5.5rem',
+      },
       boxShadow: {
-        soft:"0 10px 30px -10px rgba(0,0,0,.1)",
-      },
-      backgroundImage: {
-        "brand-radial":"radial-gradient(900px 420px at 70% 10%, rgba(122,183,145,.15), transparent)",
+        'soft': '0 4px 30px rgba(0, 0, 0, 0.1)',
+        'premium': '0 20px 50px rgba(0, 0, 0, 0.3)',
       },
     },
   },
   plugins: [],
-};
+}
